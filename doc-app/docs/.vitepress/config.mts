@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/Shorty.Docs/",
   title: "Shorty Docs",
   description: "Documentation for the link shortening service",
   themeConfig: {
