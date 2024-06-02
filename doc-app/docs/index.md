@@ -7,14 +7,20 @@ hero:
   text: "Documentation for link shortener API"
   actions:
     - theme: brand
-      text: Check out
-      link: /markdown-examples
+      text: Try start
+      link: /api/
+    - theme: alt
+      text: Official client
+      link: https://github.com/ElixorTeam/Shorty.Client
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 💡
+    title: Modern
+    details: Utilizes Kotlin for reliability and scalability.
+  - icon: 🚀
+    title: Fast
+    details: High performance with Spring Boot.
+  - icon: ⚙️
+    title: Versatile
+    details: Offers a wide range of features.
 ---

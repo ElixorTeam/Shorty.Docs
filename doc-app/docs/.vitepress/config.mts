@@ -9,15 +9,34 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "Api", link: "/api/" },
     ],
-
     sidebar: [
       {
-        text: "Examples",
+        text: "About",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "About", link: "/api/" },
+        ],
+      },
+    {
+      text: "Admin",
+      items: [
+        { text: "Domains", link: "/api/admin/domains.md" },
+      ],
+    },
+    {
+      text: "User",
+      items: [
+        { text: "Subdomains", link: "/api/user/subdomains.md" },
+        { text: "Links", link: "/api/user/links.md" },
+        { text: "Tags", link: "/api/user/tags.md" },
+        { text: "Analytics", link: "/api/user/analytics.md" },
+      ],
+    },
+      {
+        text: "Anonymous",
+        items: [
+          { text: "Redirects", link: "/api/anonymous/redirects.md" },
         ],
       },
     ],
