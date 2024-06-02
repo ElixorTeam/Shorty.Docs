@@ -1,4 +1,5 @@
 # Subdomains
+Subdomains are important because all users interact with them directly, bypassing the domain controller.
 
 ### Base requirements
 - Auth: `Bearer token`
@@ -10,10 +11,10 @@
 - Max elements for 1 domain for user: `3`
 
 
-> | name      | type     | data type | description       |
-> |-----------|----------|-----------|-------------------|
-> | domainUid | required | UUID      | domain uid        |
-> | value     | required | string    | subdomain address |
+> | name      | type              | data type | description       |
+> |-----------|-------------------|-----------|-------------------|
+> | domainUid | required          | UUID      | domain uid        |
+> | value     | required / unique | string    | subdomain address |
 
 ### Validation
 - <u>value</u>
@@ -39,6 +40,12 @@
   }
 }
 ```
+
+### Errors
+- [Not unique](../misc/errors.md#notunique)
+- [Not valid](../misc/errors.md#notvalid)
+- [Too many records](../misc/errors.md#tomanyrecords)
+
 
 ## GET
 Get all user domains data
@@ -79,3 +86,8 @@ Get all user domains data
 
 ## DELETE / `{id}`
 - Method: `DELETE`
+- Url: `/api/v1/user/subdomains`
+
+### Errors
+- [Not found](../misc/errors.md#errors)
+- [Is using](../misc/errors.md#isusing)
