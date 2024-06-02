@@ -41,8 +41,8 @@ Shorter domain names greatly enhance the efficiency and brevity of our service.
 ```
 
 ### Errors
-
 - [Not unique](../misc/errors.md#notunique)
+- [Not valid](../misc/errors.md#notvalid)
 - [Too many records](../misc/errors.md#tomanyrecords)
 
 ## GET
@@ -72,6 +72,5 @@ Get all domains
 - Url: `/api/v1/domains/{id}`
 
 ### Errors
-
 - [Not found](../misc/errors.md#errors)
 - [Is using](../misc/errors.md#isusing)

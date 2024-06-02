@@ -29,7 +29,7 @@ The record cannot be deleted because it is referenced by other records.
 ## NotUnique
 The record cannot be created, because not unique
 - HttpCode: `409`
-- On: `POST`
+- On: `POST` `PUT`
 
 ### Example
 ```json 
@@ -48,5 +48,18 @@ The record cannot be created because the maximum count has been reached
 { 
   "error": "TOO_MANY_RECORDS",
   "maxAllowedRecords": 10
+}
+```
+
+## NotValid
+The record is invalid
+- HttpCode: `422`
+- On: `POST` `PUT`
+
+### Example
+```json 
+{ 
+  "error": "BODY_NOT_VALID",
+  "invalidFields": ["field1", "field2"]
 }
 ```
