@@ -1,5 +1,4 @@
 # Domains
-
 In our system, "domains" are a carefully selected list of short domain names used to create shortened links. 
 Shorter domain names greatly enhance the efficiency and brevity of our service.
 
@@ -45,8 +44,8 @@ Shorter domain names greatly enhance the efficiency and brevity of our service.
 - [Not valid](../misc/errors.md#notvalid)
 - [Too many records](../misc/errors.md#tomanyrecords)
 
+
 ## GET
-Get all domains
 - Method: `GET`
 - Url: `/api/v1/domains`
 
@@ -66,6 +65,7 @@ Get all domains
   ]
 }
 ```
+
 
 ## DELETE / `{id}`
 - Method: `DELETE`

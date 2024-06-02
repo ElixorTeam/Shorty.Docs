@@ -24,4 +24,5 @@ are omitted from this documentation.
 
 ## Future soon
 - Postgres
+- Redis
 - Easy deploy

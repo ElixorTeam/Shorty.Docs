@@ -73,7 +73,7 @@ This entity records all user interactions with shortened links, collecting infor
 ### Example
 
 ```http
-GET {{url}}/api/v1/redirects/link?domain=sh0.su&path=ml6v1s
+GET /api/v1/redirects/link?domain=sh0.su&path=ml6v1s
 ```
 
 ### Errors

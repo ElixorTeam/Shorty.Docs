@@ -45,6 +45,7 @@ Subdomains are important because all users interact with them directly, bypassin
 - [Not unique](../misc/errors.md#notunique)
 - [Not valid](../misc/errors.md#notvalid)
 - [Too many records](../misc/errors.md#tomanyrecords)
+- [Nested record not found](../misc/errors.md#fknotfound)
 
 
 ## GET
@@ -83,6 +84,7 @@ Get all user domains data
   ]
 }
 ```
+
 
 ## DELETE / `{id}`
 - Method: `DELETE`

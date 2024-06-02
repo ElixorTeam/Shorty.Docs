@@ -14,6 +14,7 @@ Record by id not found
 }
 ```
 
+
 ## IsUsing
 The record cannot be deleted because it is referenced by other records.
 - HttpCode: `409`
@@ -26,6 +27,7 @@ The record cannot be deleted because it is referenced by other records.
 }
 ```
 
+
 ## NotUnique
 The record cannot be created, because not unique
 - HttpCode: `409`
@@ -37,6 +39,7 @@ The record cannot be created, because not unique
   "error": "IS_USING"
 }
 ```
+
 
 ## ToManyRecords
 The record cannot be created because the maximum count has been reached
@@ -51,6 +54,7 @@ The record cannot be created because the maximum count has been reached
 }
 ```
 
+
 ## NotValid
 The record is invalid
 - HttpCode: `422`
@@ -61,5 +65,18 @@ The record is invalid
 { 
   "error": "BODY_NOT_VALID",
   "invalidFields": ["field1", "field2"]
+}
+```
+
+
+## FkNotFound
+Foreign key record not found
+- HttpCode: `404`
+- On: `POST` `PUT` `GET`
+
+### Example
+```json 
+{ 
+  "error": "NESTED_RECORD_NOT_FOUND"
 }
 ```
