@@ -1,4 +1,6 @@
 # Links
+This entity is responsible for storing the link along with its settings, password, and other relevant details.
+The entire service operates around this core entity!
 
 ### Base requirements
 - Auth: `Bearer token`
