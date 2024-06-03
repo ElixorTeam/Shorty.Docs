@@ -20,17 +20,17 @@ This entity records all user interactions with shortened links, collecting infor
 
 ### Validation
 - <u>os</u>
-  - len: `2 < .. < 16`
+  - len: `[2, 16]`
 - <u>device</u>
   - only: `Mobile` `Desktop`
 - <u>domain</u>
-  - len: `5 < .. < 32`
+  - len: `[5, 32]`
   - regex: `^[a-z0-9]+[.:][a-z0-9]{2,}$`
 - <u>subdomain</u>
-  - len: `2 < .. < 16`
+  - len: `[2, 16]`
   - regex: `^[a-zA-Z]{2,16}$`
 - <u>path</u>
-  - len: `2 < .. < 16`
+  - len: `[2, 16]`
   
 ### Example
 
@@ -62,18 +62,28 @@ This entity records all user interactions with shortened links, collecting infor
 
 ### Validation
 - <u>domain</u>
-  - len: `5 < .. < 32`
+  - len: `[5, 32]`
   - regex: `^[a-z0-9]+[.:][a-z0-9]{2,}$`
 - <u>subdomain</u>
-  - len: `2 < .. < 16`
+  - len: `[2, 16]`
   - regex: `^[a-zA-Z]{2,16}$`
 - <u>path</u>
-  - len: `2 < .. < 16`
+  - len: `[2, 16]`
 
 ### Example
 
 ```http
 GET /api/v1/redirects/link?domain=sh0.su&path=ml6v1s
+```
+```json
+{
+  "uid": "41c6e485-b373-4723-a31e-3ee767367fbd",
+  "password": null,
+  "urls": [
+    "https://www.youtube.com/",
+    "https://vk.com/"
+  ]
+}
 ```
 
 ### Errors

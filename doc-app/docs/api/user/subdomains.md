@@ -18,7 +18,7 @@ Subdomains are important because all users interact with them directly, bypassin
 
 ### Validation
 - <u>value</u>
-  - len: `2 < .. < 16`
+  - len: `[2, 16]`
   - regex: `^[a-zA-Z]{2,16}$`
 
 ### Example
@@ -49,7 +49,6 @@ Subdomains are important because all users interact with them directly, bypassin
 
 
 ## GET
-Get all user domains data
 - Method: `GET`
 - Url: `/api/v1/user/subdomains`
 

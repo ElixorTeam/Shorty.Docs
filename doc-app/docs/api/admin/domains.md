@@ -18,7 +18,7 @@ Shorter domain names greatly enhance the efficiency and brevity of our service.
 
 ### Validation
 - <u>value</u>
-  - len: `5 < .. < 32`
+  - len: `[5, 32]`
   - regex: ```^[a-z0-9]+[.:][a-z0-9]{2,}$```
 
 ### Example
